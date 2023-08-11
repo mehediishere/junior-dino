@@ -301,3 +301,12 @@ export default router;
 
 That's it!!
 Now page navigation should work perfectly.
+
+Note: Remember to update laravel `web.php` file so that when you manually enter a link with page name you don't get 404.
+Here is the code you may enter at `web.php`
+
+```vue
+Route::get('/{any}', function () {
+    return view('welcome'); // Blade view that contains your Vue app. In our case #app
+})->where('any', '.*');
+```
