@@ -302,7 +302,7 @@ export default router;
 That's it!!
 Now page navigation should work perfectly.
 
-Note: Remember to update laravel `web.php` file so that when you manually enter a link with page name you don't get 404.
+Note: Remember to update laravel `web.php` file so that when you manually enter a link with page name like `http://127.0.0.1:8000/page1` you don't get 404.
 Here is the code you may enter at `web.php`
 
 ```vue
